@@ -7,4 +7,6 @@
     <color name="green">#10893E</color>
     <color name="background">#FFFFFFFF</color>
     <color name="blue">#28A3B3</color>
+    <color name="font_black_color">#000000</color>
+    <color name="white_smoke">#F5F5F5</color>
 </resources>

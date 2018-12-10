@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MyUiTools</string>
+    <string name="home_page">首页</string>
+    <string name="shopping_cart">购物车</string>
+    <string name="shopping_question">问大家</string>
+    <string name="me">我</string>
 </resources>
