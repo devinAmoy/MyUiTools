@@ -1,10 +1,8 @@
 package com.open.devin.myuitools.taobaohomepage;
 
-import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.view.View;
 
 import com.open.devin.myuitools.taobaohomepage.fragment.HomeFragment;
 import com.open.devin.myuitools.taobaohomepage.fragment.MeFragment;
@@ -23,9 +21,9 @@ public class HomeViewPageAdapter extends FragmentPagerAdapter {
     public HomeViewPageAdapter(FragmentManager fm) {
         super(fm);
         pages.add(HomeFragment.getInstance());
-        pages.add(MeFragment.getInstance());
         pages.add(QuestionFragment.getInstance());
         pages.add(ShoppingCarFragment.getInstance());
+        pages.add(MeFragment.getInstance());
     }
 
 
@@ -39,8 +37,4 @@ public class HomeViewPageAdapter extends FragmentPagerAdapter {
         return pages.size();
     }
 
-    @Override
-    public boolean isViewFromObject(@NonNull View view, @NonNull Object o) {
-        return false;
-    }
 }

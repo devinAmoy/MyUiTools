@@ -58,7 +58,6 @@ public class TaoBaoHomePageActivity extends AppCompatActivity implements BottomN
 
     @Override
     public void onPageScrolled(int i, float v, int i1) {
-
     }
 
     @Override
