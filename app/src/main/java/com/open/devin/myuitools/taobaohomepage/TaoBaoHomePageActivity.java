@@ -1,14 +1,13 @@
 package com.open.devin.myuitools.taobaohomepage;
 
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.open.devin.myuitools.R;
-import com.open.devin.myuitools.taobaohomepage.fragment.HomeFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -22,6 +21,7 @@ public class TaoBaoHomePageActivity extends AppCompatActivity implements BottomN
     ViewPager viewPager;
 
     private HomeViewPageAdapter viewPageAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +51,7 @@ public class TaoBaoHomePageActivity extends AppCompatActivity implements BottomN
             case R.id.my_page:
                 viewPager.setCurrentItem(3);
                 break;
-                default:
+            default:
         }
         return true;
     }
@@ -62,7 +62,25 @@ public class TaoBaoHomePageActivity extends AppCompatActivity implements BottomN
 
     @Override
     public void onPageSelected(int i) {
-        bottomNavigationView.getMenu().getItem(i).setCheckable(true);
+        int id;
+        switch (i) {
+            case 0:
+                id = R.id.home_page;
+                break;
+            case 1:
+                id = R.id.question_page;
+                break;
+            case 2:
+                id = R.id.shopping_cart_page;
+                break;
+            case 3:
+                id = R.id.my_page;
+                break;
+            default:
+                id = R.id.home_page;
+                break;
+        }
+        bottomNavigationView.setSelectedItemId(id);
     }
 
     @Override
