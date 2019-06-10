@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.open.devin.myuitools.leftsidemenustyles.LeftSideMenuHomeActivity;
 import com.open.devin.myuitools.taobaohomepage.TaoBaoHomePageActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         startModule(R.id.tao_bao, TaoBaoHomePageActivity.class);
+        startModule(R.id.left_side_menu, LeftSideMenuHomeActivity.class);
     }
 
     private void startModule(int id, Class activity) {

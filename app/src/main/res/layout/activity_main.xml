@@ -13,6 +13,12 @@
         <android.support.v7.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/left_side_menu"
+            android:text="侧滑菜单"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/tao_bao"
             android:text="购物"/>
 
