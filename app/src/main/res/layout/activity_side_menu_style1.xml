@@ -19,6 +19,7 @@
     <android.support.v4.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/drawerLayout"
         tools:openDrawer="start">
 
         <android.support.constraint.ConstraintLayout
@@ -37,6 +38,7 @@
         </android.support.constraint.ConstraintLayout>
 
         <android.support.design.widget.NavigationView
+            android:id="@+id/navigation_view"
             android:layout_width="240dp"
             android:layout_gravity="start"
             android:layout_height="match_parent"

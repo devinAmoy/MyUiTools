@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".leftsidemenustyles.SideMenuStyle1Activity"></activity>
+        <activity android:name=".momo.MoMoActivity"></activity>
+        <activity android:name=".leftsidemenustyles.SideMenuStyle1Activity" />
         <activity android:name=".leftsidemenustyles.LeftSideMenuHomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

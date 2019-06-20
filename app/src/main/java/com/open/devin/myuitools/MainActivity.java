@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         startModule(R.id.tao_bao, TaoBaoHomePageActivity.class);
         startModule(R.id.left_side_menu, LeftSideMenuHomeActivity.class);
+        startModule(R.id.mo_mo, LeftSideMenuHomeActivity.class);
     }
 
     private void startModule(int id, Class activity) {
