@@ -1,10 +1,11 @@
 package com.open.devin.myuitools;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.open.devin.myuitools.leftsidemenustyles.LeftSideMenuHomeActivity;
+import com.open.devin.myuitools.momo.MoMoActivity;
 import com.open.devin.myuitools.taobaohomepage.TaoBaoHomePageActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         startModule(R.id.tao_bao, TaoBaoHomePageActivity.class);
         startModule(R.id.left_side_menu, LeftSideMenuHomeActivity.class);
-        startModule(R.id.mo_mo, LeftSideMenuHomeActivity.class);
+        startModule(R.id.mo_mo, MoMoActivity.class);
     }
 
     private void startModule(int id, Class activity) {
