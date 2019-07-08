@@ -34,8 +34,8 @@ public class MoMoAdapter extends RecyclerView.Adapter<CardViewHolder> {
     public void onBindViewHolder(@NonNull CardViewHolder cardViewHolder, int i) {
         SwipeCardView swipeCardView = cardViews.get(i);
         Glide.with(context).load(swipeCardView.url).into(cardViewHolder.imageView);
-        cardViewHolder.indexTextView.setText(i+"/"+getItemCount());
-        cardViewHolder.textView.setText("Girl"+i);
+        cardViewHolder.indexTextView.setText(swipeCardView.level+"/"+getItemCount());
+        cardViewHolder.textView.setText("Girl"+swipeCardView.level);
     }
 
     @Override
@@ -47,5 +47,9 @@ public class MoMoAdapter extends RecyclerView.Adapter<CardViewHolder> {
     public void setData(List<SwipeCardView> list) {
         this.cardViews=list;
         notifyDataSetChanged();
+    }
+
+    public List<SwipeCardView> getData() {
+        return cardViews;
     }
 }
