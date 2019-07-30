@@ -28,5 +28,11 @@
             android:id="@+id/mo_mo"
             android:text="默默滑动效果"/>
 
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/animation"
+            android:text="动画"/>
+
     </LinearLayout>
 </ScrollView>
