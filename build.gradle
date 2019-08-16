@@ -1,7 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    
+
     repositories {
         maven { url 'https://maven.aliyun.com/repository/central' }
         maven { url 'https://maven.aliyun.com/repository/google' }
@@ -30,6 +30,10 @@ allprojects {
         google()
         jcenter()
     }
+}
+
+ext {
+    isBaseModule = false
 }
 
 task clean(type: Delete) {
