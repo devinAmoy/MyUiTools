@@ -1,4 +1,4 @@
-package com.open.devin.myuitools.leftsidemenustyles;
+package com.example.leftsidemenu.leftsidemenustyles;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,32 +13,32 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.open.devin.myuitools.R;
+import com.example.leftsidemenu.R;
+import com.example.leftsidemenu.R2;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class SideMenuStyle2Activity extends AppCompatActivity {
 
-    @BindView(R.id.view_statusbar)
-    View viewStatusbar;
-    @BindView(R.id.toolbar)
+
+    @BindView(R2.id.toolbar)
     Toolbar toolbar;
-    @BindView(R.id.content_frame_layout)
+    @BindView(R2.id.content_frame_layout)
     FrameLayout contentFrameLayout;
-    @BindView(R.id.iv_head)
+    @BindView(R2.id.iv_head)
     AppCompatImageView ivHead;
-    @BindView(R.id.cl_head_view)
+    @BindView(R2.id.cl_head_view)
     ConstraintLayout clHeadView;
-    @BindView(R.id.msg_bg)
+    @BindView(R2.id.msg_bg)
     TextView msgBg;
-    @BindView(R.id.ll_android)
+    @BindView(R2.id.ll_android)
     LinearLayout llAndroid;
-    @BindView(R.id.ll_apple)
+    @BindView(R2.id.ll_apple)
     LinearLayout llApple;
-    @BindView(R.id.menu_frame_layout)
+    @BindView(R2.id.menu_frame_layout)
     FrameLayout menuFrameLayout;
-    @BindView(R.id.drawerLayout)
+    @BindView(R2.id.drawerLayout)
     DrawerLayout drawerLayout;
 
     @Override

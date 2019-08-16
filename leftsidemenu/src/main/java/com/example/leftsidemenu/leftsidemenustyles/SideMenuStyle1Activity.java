@@ -1,4 +1,4 @@
-package com.open.devin.myuitools.leftsidemenustyles;
+package com.example.leftsidemenu.leftsidemenustyles;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -9,23 +9,25 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-import com.open.devin.myuitools.R;
+import com.example.leftsidemenu.R;
+import com.example.leftsidemenu.R2;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class SideMenuStyle1Activity extends AppCompatActivity {
 
-    @BindView(R.id.toolbar)
+
+    @BindView(R2.id.toolbar)
     Toolbar toolbar;
-    @BindView(R.id.footer_item_setting)
+    @BindView(R2.id.footer_item_setting)
     Button footerItemSetting;
-    @BindView(R.id.footer_item_out)
+    @BindView(R2.id.footer_item_out)
     Button footerItemOut;
-    @BindView(R.id.drawerLayout)
-    DrawerLayout drawerLayout;
-    @BindView(R.id.navigation_view)
+    @BindView(R2.id.navigation_view)
     NavigationView navigationView;
+    @BindView(R2.id.drawerLayout)
+    DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

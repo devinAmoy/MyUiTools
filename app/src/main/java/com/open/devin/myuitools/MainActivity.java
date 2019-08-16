@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.example.leftsidemenu.leftsidemenustyles.LeftSideMenuHomeActivity;
 import com.open.devin.myuitools.animation.AnimationDemoActivity;
-import com.open.devin.myuitools.leftsidemenustyles.LeftSideMenuHomeActivity;
 import com.open.devin.myuitools.momo.MoMoActivity;
 import com.open.devin.myuitools.taobaohomepage.TaoBaoHomePageActivity;
 

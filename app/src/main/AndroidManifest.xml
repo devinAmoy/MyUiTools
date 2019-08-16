@@ -11,14 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".leftsidemenustyles.SideMenuStyle2Activity"></activity>
+        <activity android:name="com.example.leftsidemenu.leftsidemenustyles.SideMenuStyle2Activity"></activity>
         <activity android:name=".animation.PropertyAnimationActivity" />
         <activity android:name=".animation.DrawableAnimationActivity" />
         <activity android:name=".animation.ViewAnimationActivity" />
         <activity android:name=".animation.AnimationDemoActivity" />
         <activity android:name=".momo.MoMoActivity" />
-        <activity android:name=".leftsidemenustyles.SideMenuStyle1Activity" />
-        <activity android:name=".leftsidemenustyles.LeftSideMenuHomeActivity" />
+        <activity android:name="com.example.leftsidemenu.leftsidemenustyles.SideMenuStyle1Activity" />
+        <activity android:name="com.example.leftsidemenu.leftsidemenustyles.LeftSideMenuHomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

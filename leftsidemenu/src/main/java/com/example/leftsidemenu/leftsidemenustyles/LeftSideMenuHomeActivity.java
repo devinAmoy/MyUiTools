@@ -1,9 +1,9 @@
-package com.open.devin.myuitools.leftsidemenustyles;
+package com.example.leftsidemenu.leftsidemenustyles;
 
 import android.os.Bundle;
 import android.view.View;
 
-import com.open.devin.myuitools.R;
+import com.example.leftsidemenu.R;
 import com.uitools.mylibrary.BaseActivity;
 
 public class LeftSideMenuHomeActivity extends BaseActivity {
