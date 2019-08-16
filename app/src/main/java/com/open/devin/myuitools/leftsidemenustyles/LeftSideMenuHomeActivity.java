@@ -1,13 +1,12 @@
 package com.open.devin.myuitools.leftsidemenustyles;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
 import com.open.devin.myuitools.R;
+import com.uitools.mylibrary.BaseActivity;
 
-public class LeftSideMenuHomeActivity extends AppCompatActivity {
+public class LeftSideMenuHomeActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,8 +15,11 @@ public class LeftSideMenuHomeActivity extends AppCompatActivity {
     }
 
     public void style1(View view) {
-        startActivity(new Intent(this, SideMenuStyle1Activity.class));
+        startActivity(SideMenuStyle1Activity.class);
     }
 
+    public void style2(View view){
+        startActivity(SideMenuStyle2Activity.class);
+    }
 
 }

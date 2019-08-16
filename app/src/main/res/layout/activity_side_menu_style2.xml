@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/content_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/activity_let_side_menu_content2"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/menu_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+        <include layout="@layout/side_bar_left_menu2"/>
+    </FrameLayout>
+
+</android.support.v4.widget.DrawerLayout>

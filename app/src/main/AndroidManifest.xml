@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".animation.PropertyAnimationActivity"></activity>
+        <activity android:name=".leftsidemenustyles.SideMenuStyle2Activity"></activity>
+        <activity android:name=".animation.PropertyAnimationActivity" />
         <activity android:name=".animation.DrawableAnimationActivity" />
         <activity android:name=".animation.ViewAnimationActivity" />
         <activity android:name=".animation.AnimationDemoActivity" />
