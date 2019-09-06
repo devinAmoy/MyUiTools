@@ -5,7 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.open.devin.myuitools.R;
+import com.uitools.mylibrary.router.RouterMap;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +15,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+@Route(path = RouterMap.MO_MO_ACTIVITY)
 public class MoMoActivity extends AppCompatActivity {
 
     @BindView(R.id.rv)

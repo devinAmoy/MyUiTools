@@ -9,12 +9,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.example.leftsidemenu.R;
 import com.example.leftsidemenu.R2;
+import com.uitools.mylibrary.router.RouterMap;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+@Route(path = RouterMap.SIDE_MENU_STYLE1)
 public class SideMenuStyle1Activity extends AppCompatActivity {
 
 

@@ -1,28 +1,23 @@
 package com.open.devin.myuitools;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
-import com.example.leftsidemenu.leftsidemenustyles.LeftSideMenuHomeActivity;
-import com.open.devin.myuitools.animation.AnimationDemoActivity;
-import com.open.devin.myuitools.momo.MoMoActivity;
-import com.open.devin.myuitools.taobaohomepage.TaoBaoHomePageActivity;
+import com.uitools.mylibrary.BaseActivity;
+import com.uitools.mylibrary.router.RouterMap;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        startModule(R.id.tao_bao, TaoBaoHomePageActivity.class);
-        startModule(R.id.left_side_menu, LeftSideMenuHomeActivity.class);
-        startModule(R.id.mo_mo, MoMoActivity.class);
-        startModule(R.id.animation, AnimationDemoActivity.class);
+        startModule(R.id.left_side_menu, RouterMap.LEFT_SIDE_MENU_HOME);
+        startModule(R.id.mo_mo, RouterMap.MO_MO_ACTIVITY);
+        startModule(R.id.animation, RouterMap.ANIMATION_DEMO);
     }
 
-    private void startModule(int id, Class activity) {
-        findViewById(id).setOnClickListener(v -> startActivity(new Intent(this, activity)));
+    private void startModule(int id, String moduleName) {
+        findViewById(id).setOnClickListener(v -> navigation(moduleName));
     }
 }

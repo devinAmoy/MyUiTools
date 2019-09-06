@@ -5,8 +5,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.open.devin.myuitools.R;
+import com.uitools.mylibrary.router.RouterMap;
 
+@Route(path = RouterMap.ANIMATION_DEMO)
 public class AnimationDemoActivity extends AppCompatActivity {
 
     @Override

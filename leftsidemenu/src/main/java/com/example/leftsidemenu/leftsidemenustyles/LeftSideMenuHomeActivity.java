@@ -3,9 +3,12 @@ package com.example.leftsidemenu.leftsidemenustyles;
 import android.os.Bundle;
 import android.view.View;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.example.leftsidemenu.R;
 import com.uitools.mylibrary.BaseActivity;
+import com.uitools.mylibrary.router.RouterMap;
 
+@Route(path = RouterMap.LEFT_SIDE_MENU_HOME)
 public class LeftSideMenuHomeActivity extends BaseActivity {
 
     @Override
@@ -15,7 +18,7 @@ public class LeftSideMenuHomeActivity extends BaseActivity {
     }
 
     public void style1(View view) {
-        startActivity(SideMenuStyle1Activity.class);
+        navigation(RouterMap.SIDE_MENU_STYLE1);
     }
 
     public void style2(View view){
