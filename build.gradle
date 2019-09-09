@@ -34,6 +34,7 @@ allprojects {
 
 ext {
     isBaseModule = false
+    androidXVersion = '1.0.0'
 }
 
 task clean(type: Delete) {
