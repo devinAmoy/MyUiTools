@@ -1,1 +1,9 @@
-<manifest package="com.uitools.xiangxuenews" />
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uitools.xiangxuenews">
+
+    <application>
+        <activity android:name=".XxNewsMainActivity"></activity>
+    </application>
+
+</manifest>

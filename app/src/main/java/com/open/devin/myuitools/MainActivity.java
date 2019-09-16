@@ -15,6 +15,7 @@ public class MainActivity extends BaseActivity {
         startModule(R.id.left_side_menu, RouterMap.LEFT_SIDE_MENU_HOME);
         startModule(R.id.mo_mo, RouterMap.MO_MO_ACTIVITY);
         startModule(R.id.animation, RouterMap.ANIMATION_DEMO);
+        startModule(R.id.xx_news, RouterMap.XX_NEWS_MAIN);
     }
 
     private void startModule(int id, String moduleName) {

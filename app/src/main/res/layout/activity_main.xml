@@ -28,5 +28,11 @@
             android:id="@+id/animation"
             android:text="动画"/>
 
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/xx_news"
+            android:text="XX新闻"/>
+
     </LinearLayout>
 </ScrollView>
