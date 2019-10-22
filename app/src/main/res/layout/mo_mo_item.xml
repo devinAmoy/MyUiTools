@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView android:layout_width="270dp"
+<androidx.cardview.widget.CardView android:layout_width="270dp"
     android:layout_height="330dp"
     xmlns:tools="http://schemas.android.com/tools"
     android:clickable="true"
@@ -44,4 +44,4 @@
         android:textColor="@android:color/white"
         tools:text="1/13" />
 
-</android.support.v7.widget.CardView>
+</androidx.cardview.widget.CardView>

@@ -1,10 +1,11 @@
 package com.open.devin.myuitools.momo;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 public class SwipeCardLayoutManger extends RecyclerView.LayoutManager {
 

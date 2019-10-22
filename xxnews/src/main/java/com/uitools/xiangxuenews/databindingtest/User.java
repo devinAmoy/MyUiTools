@@ -1,7 +1,7 @@
 package com.uitools.xiangxuenews.databindingtest;
 
-import android.databinding.BaseObservable;
-import android.databinding.Bindable;
+import androidx.databinding.BaseObservable;
+import androidx.databinding.Bindable;
 
 import com.uitools.xiangxuenews.BR;
 
