@@ -3,7 +3,8 @@
     package="com.uitools.xiangxuenews">
 
     <application>
-        <activity android:name=".XxNewsMainActivity"></activity>
+        <activity android:name=".databindingtest.DataBindingTestActivity"></activity>
+        <activity android:name=".XxNewsMainActivity" />
     </application>
 
 </manifest>
