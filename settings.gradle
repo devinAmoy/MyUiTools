@@ -1,1 +1,1 @@
-include ':app', ':base', ':leftsidemenu', ':xxnews'
+include ':app', ':base', ':androidbus', ':xxnews'
