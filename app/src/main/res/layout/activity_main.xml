@@ -40,6 +40,12 @@
             android:id="@+id/dataBinding"
             android:text="Data binding"/>
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sliding_options"
+            android:text="滑动选择"/>
+
 
 
     </LinearLayout>
