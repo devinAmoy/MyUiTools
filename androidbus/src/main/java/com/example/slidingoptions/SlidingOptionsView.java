@@ -17,15 +17,20 @@ import androidx.annotation.Nullable;
 
 import com.example.leftsidemenu.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SlidingOptionsView extends View {
     private String[] titles;
     private float textSize;
     private int strokeColor;
     private float strokeWidth;
     private Paint whitePaint, textPaint2;
-    private int height, width, count, touchPoint, currentItemPosition;
+    private int height, width, count, currentItemPosition;
     private float borderWidth = 3;
+    private float touchPoint = 0;
     private ValueAnimator drawAnimator;
+    private List<Float> textPointLocations = new ArrayList<>();
 
 
     public SlidingOptionsView(Context context) {
@@ -82,10 +87,12 @@ public class SlidingOptionsView extends View {
         canvas.drawRoundRect(new RectF(touchPoint - width / count, borderWidth / 2, touchPoint + width / count, height - borderWidth / 2), width / 2, width / 2, textPaint2);
         textPaint2.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.XOR));
 
+        textPointLocations.clear();
         for (int i = 0; i < titles.length; i++) {
             float txtWidth = textPaint2.measureText(titles[i]);
             float location = width / count * (i * 2 + 1) - txtWidth / 2;
-            canvas.drawText(titles[i], location, (height - 12) / 2 + 25, textPaint2);
+            canvas.drawText(titles[i], location, (height - 19) / 2 + 25, textPaint2);
+            textPointLocations.add(location + txtWidth / 2);
         }
         textPaint2.setXfermode(null);
         canvas.restoreToCount(layerId);
@@ -93,7 +100,27 @@ public class SlidingOptionsView extends View {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
 
-        return super.onTouchEvent(event);
+            case MotionEvent.ACTION_UP:
+
+            case MotionEvent.ACTION_MOVE:
+                touchPoint = getTouchPoint(event);
+                invalidate();
+                break;
+
+            default:
+                break;
+        }
+        return true;
+    }
+
+
+
+    private float getTouchPoint(MotionEvent event) {
+        float x = event.getX();
+
+        return x < textPointLocations.get(0) ? textPointLocations.get(0) : (x > textPointLocations.get(textPointLocations.size() - 1) ? textPointLocations.get(textPointLocations.size() - 1) : x);
     }
 }
