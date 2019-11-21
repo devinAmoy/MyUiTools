@@ -19,6 +19,7 @@ import com.example.leftsidemenu.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class SlidingOptionsView extends View {
     private String[] titles;
@@ -102,9 +103,19 @@ public class SlidingOptionsView extends View {
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-
+                if (drawAnimator != null && drawAnimator.isRunning()) {
+                    drawAnimator.cancel();
+                }
+                touchPoint = getTouchPoint(event);
+                invalidate();
+                break;
             case MotionEvent.ACTION_UP:
-
+                if (drawAnimator != null && drawAnimator.isRunning()) {
+                    drawAnimator.cancel();
+                }
+                float startPoint = event.getX();
+                startAnimator(startPoint, getNearestPoint(startPoint));
+                break;
             case MotionEvent.ACTION_MOVE:
                 touchPoint = getTouchPoint(event);
                 invalidate();
@@ -116,7 +127,24 @@ public class SlidingOptionsView extends View {
         return true;
     }
 
+    private float getNearestPoint(final float startPoint) {
+        if (textPointLocations.isEmpty())
+            return startPoint;
 
+        List<Float> abs = textPointLocations.stream().map(point -> Math.abs(point - startPoint)).collect(Collectors.toList());
+        Float min = abs.stream().min(Float::compareTo).orElse(startPoint);
+        return textPointLocations.get(abs.indexOf(min));
+    }
+
+    private void startAnimator(float start, float end) {
+        drawAnimator = ValueAnimator.ofFloat(start, end);
+        drawAnimator.setDuration(100);
+        drawAnimator.addUpdateListener(valueAnimator -> {
+            touchPoint = (float) valueAnimator.getAnimatedValue();
+            invalidate();
+        });
+        drawAnimator.start();
+    }
 
     private float getTouchPoint(MotionEvent event) {
         float x = event.getX();
