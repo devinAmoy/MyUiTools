@@ -8,4 +8,5 @@ public class RouterMap {
     public static final String ANIMATION_DEMO = "/animation/demo";
     public static final String XX_NEWS_MAIN = "/xx/news/main";
     public static final String XX_DATABINDING_TEST = "/xx/databindingtest";
+    public static final String MENU_DRAG = "/xx/menu/drag";
 }

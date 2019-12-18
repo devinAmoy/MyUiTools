@@ -18,7 +18,9 @@ public class MainActivity extends BaseActivity {
         startModule(R.id.xx_news, RouterMap.XX_NEWS_MAIN);
         startModule(R.id.dataBinding, RouterMap.XX_DATABINDING_TEST);
         startModule(R.id.sliding_options, RouterMap.SLIDE_OPTIONS);
+        startModule(R.id.drag_manage, RouterMap.MENU_DRAG);
 
+        navigation(RouterMap.MENU_DRAG);
     }
 
     private void startModule(int id, String moduleName) {

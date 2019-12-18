@@ -46,6 +46,12 @@
             android:id="@+id/sliding_options"
             android:text="滑动选择"/>
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/drag_manage"
+            android:text="菜单拖动排序"/>
+
 
 
     </LinearLayout>

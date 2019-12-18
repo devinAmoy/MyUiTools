@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.slidingoptions.SlidingOptionsActivity"/>
+        <activity android:name="com.example.menudrage.MenuDragActivity"></activity>
+        <activity android:name="com.example.slidingoptions.SlidingOptionsActivity" />
         <activity android:name=".leftsidemenustyles.LeftSideMenuHomeActivity" />
     </application>
 
