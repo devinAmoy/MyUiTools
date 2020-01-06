@@ -33,5 +33,10 @@ public class MenuDragActivity extends AppCompatActivity {
 
         adapter = new DragViewAdapter(this);
         dragGridView.setAdapter(adapter);
+        dragGridView.setOnItemLongClickListener((parent, view, position, id) -> {
+            dragGridView.beginDrag(position);
+            return false;
+        });
+
     }
 }
