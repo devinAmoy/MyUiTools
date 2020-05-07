@@ -19,8 +19,8 @@ public class MainActivity extends BaseActivity {
         startModule(R.id.dataBinding, RouterMap.XX_DATABINDING_TEST);
         startModule(R.id.sliding_options, RouterMap.SLIDE_OPTIONS);
         startModule(R.id.drag_manage, RouterMap.MENU_DRAG);
+        startModule(R.id.elema_book_dinner, RouterMap.BOOK_DINNER);
 
-        navigation(RouterMap.MENU_DRAG);
     }
 
     private void startModule(int id, String moduleName) {
