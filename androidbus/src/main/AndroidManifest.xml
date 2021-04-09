@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.waimaishanpin.EleMaGoodSaleActivity"></activity>
+        <activity android:name="com.example.huadongdingbu.HuaDongDingBuActivity"></activity>
+        <activity android:name="com.example.waimaishanpin.EleMaGoodSaleActivity" />
         <activity android:name="com.example.menudrage.MenuDragActivity" />
         <activity android:name="com.example.slidingoptions.SlidingOptionsActivity" />
         <activity android:name=".leftsidemenustyles.LeftSideMenuHomeActivity" />
